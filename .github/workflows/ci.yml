@@ -14,4 +14,8 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Build Docker Image
+
+        run: docker build -t flask-ci-app .
+
         run: docker build -t devops-app .
+
